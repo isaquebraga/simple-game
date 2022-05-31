@@ -108,3 +108,10 @@ body {
         right: 100%;
     }
 }
+
+@media (max-width: 768px) {
+    .pipe {
+        width: 60px;
+        animation: pipe-animation 1s infinite linear;
+    }
+}
