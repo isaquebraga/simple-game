@@ -39,3 +39,4 @@ const loopScore = setInterval(() => {
 }, 1000)
 
 document.addEventListener("keydown", jump);
+document.addEventListener("click", jump);
