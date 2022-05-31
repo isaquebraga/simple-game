@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-image: url(/assets/img/background.jpg);
+    background-size: auto 100%;
+}
+
+.card-login {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-login h1 {
+    color: #000000;
+    font-weight: 800;
+    font-size: 8rem;
+    padding-top: 0.9em;
+}
+
+.card-login p {
+    font-weight: 500;
+    font-size: 1em;
+    padding-top: 0.9em;
+    margin-bottom: 8em;
+}
+
+button {
+   --button_radius: 0.75em;
+   --button_color: #FFF;
+   --button_outline_color: #000000;
+   font-size: 1.5em;
+   font-weight: bold;
+   border: none;
+   border-radius: var(--button_radius);
+   background: var(--button_outline_color);
+}
+
+.btn {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.75em 1.5em;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+}
+
+button:hover .btn {
+    transform: translateY(-0.33em);
+}
+
+button:active .btn {
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .main-login {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        background-image: url(/assets/img/background.jpg);
+        background-size: auto 100%;
+    }
+    
+    .card-login {
+        width: 70%;
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    
+    .card-login h1 {
+        color: #000000;
+        font-weight: 800;
+        font-size: 4em;
+        padding-top: 0.9em;
+    }
+    
+    .card-login p {
+        font-weight: 500;
+        font-size: 0.8em;
+        padding-top: 0.9em;
+        margin-bottom: 6em;
+    }
+    
+    button {
+       font-size: 0.9em;
+    }
+}

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Tiro Devanagari Sanskrit";
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/assets/img/background.jpg);
+    background-size: auto 100%;
+}
+
+.game-board {
+    width: 100%;
+    height: 77vh;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.score {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 100px;
+    height: 60px;
+}
+
+.coin {
+    width: 50px;
+    height: 50px;
+}
+
+.value {
+    padding-top: 4px;
+    font-size: 2em;
+}
+
+.clouds {
+    position: absolute;
+    top: 70px;
+    width: 400px;
+    animation: clouds-animation 20s infinite linear;
+}
+
+.pipe {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: pipe-animation 1.5s infinite linear;
+}
+
+.mario {
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+}
+
+.jump {
+    animation: jump 500ms ease-out;
+}
+
+@keyframes pipe-animation {
+    from {
+        right: -80px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+    }
+
+    40% {
+        bottom: 180px;
+    }
+
+    50% {
+        bottom: 180px;
+    }
+
+    60% {
+        bottom: 180px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+@keyframes clouds-animation {
+    from {
+        right: -450px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
